@@ -46,3 +46,6 @@ bun test infrastructure/
 
 ## Use our domain to implement our project (make our e2e tests pass!)
 
+```
+bun test tests/
+```
