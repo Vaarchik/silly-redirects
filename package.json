@@ -1,0 +1,15 @@
+{
+  "name": "silly-redirects",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "format": "bunx @biomejs/biome format --write index.ts ./domain/ ./infrastructure/ ./std/ ./tests/"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.2.2",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
