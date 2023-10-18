@@ -1,8 +1,8 @@
-import { identity } from "@std";
+import { identity } from "@std"
 
 export type Redirect = {
-	host: string;
-	destination: `https://${string}`;
-};
+  host: string
+  destination: `https://${string}`
+}
 
-export const Redirect = identity<Redirect>;
+export const Redirect = identity<Redirect>

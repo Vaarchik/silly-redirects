@@ -1,4 +1,4 @@
-import { suite } from "../domain/RedirectStore.suite";
-import { InMemoryRedirectStore } from "./InMemoryRedirectStore";
+import { suite } from "../domain/RedirectStore.suite"
+import { InMemoryRedirectStore } from "./InMemoryRedirectStore"
 
-suite("InMemoryRedirectStore", () => InMemoryRedirectStore());
+suite("InMemoryRedirectStore", () => InMemoryRedirectStore())

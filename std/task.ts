@@ -1,1 +1,1 @@
-export type Task<T> = () => Promise<T>;
+export type Task<T> = () => Promise<T>

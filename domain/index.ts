@@ -1,2 +1,2 @@
-export * from "./Redirect";
-export * from "./RedirectStore";
+export * from "./Redirect"
+export * from "./RedirectStore"
