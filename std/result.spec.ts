@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test"
-import { Failure, Success, isSuccess } from "./result"
+import {Failure, Success, isSuccess, match} from "./result"
 import assert from "assert"
 
 describe("Success", () => {
@@ -28,4 +28,20 @@ describe("Failure", () => {
   })
 })
 
-describe.todo("match test!")
+describe('Match Success', () => {
+  const success = Success("something");
+  const failure = Failure(5);
+
+  const matchRes = match({
+    onFailure: (cause) => 'failure',
+    onSuccess: (value) => 'success'
+  });
+
+  it("is a success", () => {
+    expect(matchRes(success)).toBe('success');
+  })
+
+  it("is a failure", () => {
+    expect(matchRes(failure)).toBe('failure');
+  })
+})
